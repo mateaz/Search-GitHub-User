@@ -1,0 +1,142 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #75bbf330;
+  color: black;
+}
+
+.App {
+  text-align: center;
+  margin: 25px;
+}
+
+form {
+  display: flex;
+}
+
+#input-label {
+  height: 40px;
+  position: relative;
+  width: 45%;
+  margin-right: 20px;
+}
+
+input {
+  background-color: white;
+  border: 0;
+  box-sizing: border-box;
+  color: black;
+  font-size: 15px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+  box-shadow: 0px 0px 5px 0px black;
+}
+
+label {
+  color: #65657b;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 5px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+  font-size: 14px;
+}
+
+input:focus ~ label {
+  transform: translateY(-40px) translateX(-15px) scale(0.75);
+  background-color: #000000ba;
+  color: white;
+  padding: 10px;
+  box-shadow: -1px -2px 7px 0px #00000061;
+}
+
+.lista {
+  display: flex;
+  color: black;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: 100%;
+  list-style: none;
+  text-align: left;
+  list-style-position:inside;
+}
+
+.button {
+  font-size: 25px;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  width: 40px;
+  justify-content: center;
+  color: white;
+  background: #000000c9;
+  box-shadow: 0px 0px 4px 1px #044679c2;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.border {
+  padding: 10px;
+  flex-basis: 20%;
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px black;
+  margin: 10px;
+  padding-left: 30px;
+}
+
+#data-user {
+  display: flex;
+  justify-content: space-between;
+}
+
+#data-user img {
+  width: 20%;
+}
+
+#user-info {
+  box-shadow: 0px 0px 3px black;
+  text-align: justify;
+  background-color: #292f35cc;
+  padding: 0px 25px;
+  flex-basis: 70%;
+  color: white;
+}
+
+#user-info h2 {
+  margin-bottom: 0px;
+  margin-right: 25px;
+}
+
+#name-location-user {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+.number-list {
+  position: absolute;
+  top: -15px;
+  background: #80b7e0;
+  left: -15px;
+  width: 35px;
+  margin: auto;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  border-bottom-right-radius: 0px;
+  border: 1px solid cadetblue;
+  align-items: center;
+}
+
+#reps-list h4 {
+  color: #4f565c;
+  font-size: 20px;
+}
